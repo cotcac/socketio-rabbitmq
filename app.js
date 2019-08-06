@@ -21,22 +21,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //socket
 app.io = require('socket.io')();
-users=[];
-rooms=[];
-connections=[];
+
 //All of the event emit will run in here
-console.log("[x] connect to socket");
-
 app.io.on('connection', function (socket) {
-  console.log('connected');
-  //  connections.push(socket);
-     // send message
-     console.log("[x]",socket.id);
-     socket.send(socket.id);
-
-});//end socket
+     console.log("[x] connected:",socket.id);
+});
+//end socket
 
 require('./routes')(app);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
