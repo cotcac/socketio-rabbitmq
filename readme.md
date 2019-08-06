@@ -13,14 +13,14 @@ http://localhost:3000/
 
 Subbit and see resual on console.
 
-#flow
+# flow
 
-Flow: ![Alt][1]
+![Alt][1]
 
 [1]: /flow.jpg "Title"
 
-#screen shot
+# screen shot
 
-Screenshot: ![Alt][2]
+![Alt][2]
 
 [2]: /screenshot.jpg "Title"
